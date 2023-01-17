@@ -29,7 +29,7 @@ jobs:
       uses: actions/upload-artifact@v3.1.2
       with:
         name: NuGet package
-        path: NServiceBus.Community.RecoverabilityExtensions/bin/Release
+        path: NServiceBus.Community.RecoverabilityExtensions/bin/Release/*.nupkg
     # The desired behavior if no files are found using the provided path.
     - name: Test
       run: dotnet test --no-build --verbosity normal --configuration Release
