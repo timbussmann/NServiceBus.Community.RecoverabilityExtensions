@@ -32,4 +32,4 @@ jobs:
         path: NServiceBus.Community.RecoverabilityExtensions/bin/Release
     # The desired behavior if no files are found using the provided path.
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal --configuration Release
