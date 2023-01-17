@@ -9,6 +9,8 @@
         <PackageProjectUrl>https://github.com/timbussmann/NServiceBus.Community.RecoverabilityExtensions</PackageProjectUrl>
         <RepositoryUrl>https://github.com/timbussmann/NServiceBus.Community.RecoverabilityExtensions</RepositoryUrl>
         <PackageTags>NServiceBus</PackageTags>
+        <Description>Additional recoverability configuration options for NServiceBus endpoints</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>
