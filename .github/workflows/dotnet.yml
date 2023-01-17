@@ -24,6 +24,12 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore --configuration Release
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: NuGet package
+        path: NServiceBus.Community.RecoverabilityExtensions/bin/Release
+    # The desired behavior if no files are found using the provided path.
     - name: Test
       run: dotnet test --no-build --verbosity normal
