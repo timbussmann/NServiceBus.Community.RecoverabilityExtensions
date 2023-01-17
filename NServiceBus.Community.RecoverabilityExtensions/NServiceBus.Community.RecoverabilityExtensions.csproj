@@ -4,6 +4,11 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <PackageProjectUrl>https://github.com/timbussmann/NServiceBus.Community.RecoverabilityExtensions</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/timbussmann/NServiceBus.Community.RecoverabilityExtensions</RepositoryUrl>
+        <PackageTags>NServiceBus</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
