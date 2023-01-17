@@ -16,9 +16,9 @@ public class When_using_delayed_retries_attribute
             .Done(c => c.FailedMessages.Any())
             .Run();
 
-        Assert.AreEqual(6, context.HandlerInvocations, "should invoke the handler 1 + number of configured retries on the attribute");
+        Assert.That(context.HandlerInvocations, Is.EqualTo(6), "should invoke the handler 1 + number of configured retries on the attribute");
         var failedMessage = context.FailedMessages.Single().Value.Single();
-        Assert.AreEqual(5, int.Parse(failedMessage.Headers[Headers.DelayedRetries]));
+        Assert.That(int.Parse(failedMessage.Headers[Headers.DelayedRetries]), Is.EqualTo(5));
     }
 
     class Context : ScenarioContext

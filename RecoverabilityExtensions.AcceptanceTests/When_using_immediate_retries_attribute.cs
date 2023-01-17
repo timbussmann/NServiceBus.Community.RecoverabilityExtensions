@@ -16,8 +16,8 @@ public class When_using_immediate_retries_attribute
             .Done(c => c.FailedMessages.Any())
             .Run();
 
-        Assert.AreEqual(11, context.HandlerInvocations, "should invoke the handler 1 + number of configured retries on the attribute");
-        Assert.AreEqual(1, context.FailedMessages.Single().Value.Count);
+        Assert.That(context.HandlerInvocations, Is.EqualTo(11), "should invoke the handler 1 + number of configured retries on the attribute");
+        Assert.That(context.FailedMessages.Single().Value.Count, Is.EqualTo(1));
     }
 
     class Context : ScenarioContext
