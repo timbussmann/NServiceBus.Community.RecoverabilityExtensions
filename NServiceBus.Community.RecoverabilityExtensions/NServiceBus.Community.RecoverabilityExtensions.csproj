@@ -4,9 +4,18 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <PackageProjectUrl>https://github.com/timbussmann/NServiceBus.Community.RecoverabilityExtensions</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/timbussmann/NServiceBus.Community.RecoverabilityExtensions</RepositoryUrl>
+        <PackageTags>NServiceBus</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="MinVer" Version="4.2.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="NServiceBus" Version="[8.0.0, 9.0.0)" />
     </ItemGroup>
 
