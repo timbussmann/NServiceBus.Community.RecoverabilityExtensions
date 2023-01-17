@@ -11,7 +11,15 @@
         <PackageTags>NServiceBus</PackageTags>
         <Description>Additional recoverability configuration options for NServiceBus endpoints</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="MinVer" Version="4.2.0">
